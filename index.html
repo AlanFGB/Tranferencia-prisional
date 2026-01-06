@@ -23,7 +23,7 @@
         <header class="flex justify-between items-end border-b-2 border-black pb-1 mb-4">
             <div>
                 <h1 class="text-lg font-black tracking-tight uppercase">Prontuário Digital: Sentença Verde</h1>
-                <p class="text-[9px] font-mono">AUTORIDADE PENITENCIÁRIA - DOCUMENTO LEVE (CLOUD READY)</p>
+                <p class="text-[9px] font-mono">AUTORIDADE PENITENCIÁRIA - CLOUD READY</p>
             </div>
             <div class="text-right text-[9px] font-mono no-print">
                 REF: <span id="sessao"></span>
@@ -44,7 +44,7 @@
 
         <div id="resultado" class="hidden">
             
-            <!-- Identificação e Sentença Verde -->
+            <!-- Identificação Civil e Status Sentença Verde -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
                 <div class="card md:col-span-2">
                     <div class="section-header">Identificação Civil</div>
@@ -65,50 +65,31 @@
                 </div>
             </div>
 
-            <!-- Prontuário de Saúde Completo -->
+            <!-- Prontuário de Saúde -->
             <div class="card border-red-200">
-                <div class="section-header bg-red-800 text-white">Prontuário Médico e Psicológico</div>
+                <div class="section-header bg-red-800 text-white">Saúde: Clínico e Psicológico</div>
                 <div class="p-3 grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <!-- Clínico -->
                     <div>
                         <h3 class="text-[10px] font-bold text-red-800 uppercase mb-1 border-b">Estado Clínico</h3>
                         <div class="text-[11px] space-y-1">
-                            <p><strong>Status:</strong> Estável / Vigilância Ativa</p>
-                            <p><strong>Alergias:</strong> Penicilina</p>
-                            <p><strong>Última Consulta Médica:</strong> 15/12/2025</p>
-                            <p><strong>Observações:</strong> Hipertensão sob controle medicamentoso.</p>
+                            <p><strong>Status:</strong> Estável</p>
+                            <p><strong>Última Consulta:</strong> 15/12/2025</p>
+                            <p><strong>Observação:</strong> Hipertensão sob controle.</p>
                         </div>
                     </div>
-                    <!-- Psicológico -->
                     <div class="border-x px-3 border-gray-100">
-                        <h3 class="text-[10px] font-bold text-red-800 uppercase mb-1 border-b">Acompanhamento Mental</h3>
+                        <h3 class="text-[10px] font-bold text-red-800 uppercase mb-1 border-b">Saúde Mental</h3>
                         <div class="text-[11px] space-y-1">
-                            <p><strong>Atendimento:</strong> Semanal / Psicologia</p>
-                            <p><strong>Status:</strong> Orientado e Cooperativo</p>
-                            <p><strong>Última Consulta:</strong> 02/01/2026</p>
-                            <p><strong>Parecer:</strong> Apresenta boa resiliência ao ambiente carcerário. Sem sinais de psicose.</p>
+                            <p><strong>Atendimento:</strong> Semanal</p>
+                            <p><strong>Parecer:</strong> Orientado e cooperativo com a reabilitação.</p>
                         </div>
                     </div>
-                    <!-- Medicação em Uso -->
                     <div class="bg-gray-50 p-2 rounded">
-                        <h3 class="text-[10px] font-bold text-gray-700 uppercase mb-1 border-b border-gray-300">Medicação em Uso (Comum ou Controlada)</h3>
-                        <div class="text-[10px] space-y-2 mt-1 italic">
-                            <div>
-                                <p class="font-bold text-gray-900">• Losartana Potássica (50mg)</p>
-                                <p>Comum - 01 comprimido/dia (Hipertensão)</p>
-                            </div>
-                            <div>
-                                <p class="font-bold text-gray-900">• Sertralina (50mg)</p>
-                                <p>Controlada - 01 comprimido/dia (Ansiedade Crônica)</p>
-                            </div>
-                            <div>
-                                <p class="font-bold text-gray-900">• Dipirona Monoidratada (500mg)</p>
-                                <p>Comum - Uso SOS (Cefaleia/Febre)</p>
-                            </div>
-                            <div>
-                                <p class="font-bold text-gray-900">• Clonazepam (0,5mg)</p>
-                                <p>Controlada - Uso SOS (Insônia Severa)</p>
-                            </div>
+                        <h3 class="text-[10px] font-bold text-gray-700 uppercase mb-1 border-b border-gray-300">Medicação em Uso</h3>
+                        <div class="text-[10px] space-y-2 mt-1 italic text-gray-700">
+                            <p>• <strong>Losartana (50mg):</strong> 01 comp/dia (Hipertensão)</p>
+                            <p>• <strong>Sertralina (50mg):</strong> 01 comp/dia (Ansiedade)</p>
+                            <p>• <strong>Clonazepam (0,5mg):</strong> Uso SOS (Insônia)</p>
                         </div>
                     </div>
                 </div>
@@ -123,51 +104,47 @@
                             <tr>
                                 <th class="p-2 border-b">Fase</th>
                                 <th class="p-2 border-b">Defensor</th>
-                                <th class="p-2 border-b">OAB</th>
-                                <th class="p-2 border-b">Fórum / Instância</th>
+                                <th class="p-2 border-b">Fórum</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr class="border-b">
                                 <td class="p-2">Original</td>
                                 <td class="p-2">Dr. Marcos Oliveira</td>
-                                <td class="p-2 font-mono">12345/SP</td>
-                                <td class="p-2">Comarca Barra Funda</td>
+                                <td class="p-2">Barra Funda</td>
                             </tr>
                             <tr class="bg-blue-50">
                                 <td class="p-2 font-bold">Atual</td>
                                 <td class="p-2">Dra. Heloísa Santos</td>
-                                <td class="p-2 font-mono">67890/SP</td>
-                                <td class="p-2 font-bold">Tribunal de Justiça (Apelação)</td>
+                                <td class="p-2 font-bold">Tribunal de Justiça</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
 
-            <!-- Histórico de Custódia e Coabitação -->
+            <!-- Trajetória e Coabitação -->
             <div class="card">
                 <div class="section-header">Movimentação e Coabitação</div>
                 <div class="p-3 text-[11px] space-y-2">
                     <div class="border-l-2 border-gray-300 pl-3">
-                        <p class="font-bold uppercase text-[9px] text-gray-500">Antiga Unidade</p>
+                        <p class="font-bold uppercase text-[9px] text-gray-500">Unidade Passada</p>
                         <p>Penitenciária I Tremembé | Cela 12-B | Lotação: 140%</p>
-                        <p class="text-gray-400">Coabitação: Ricardo M., Paulo S., André V.</p>
+                        <p class="text-gray-400 italic">Coabitação: Ricardo M., Paulo S., André V.</p>
                     </div>
                     <div class="border-l-2 border-blue-600 pl-3 bg-blue-50 py-1">
-                        <p class="font-bold uppercase text-[9px] text-blue-700">Unidade Vigente</p>
+                        <p class="font-bold uppercase text-[9px] text-blue-700">Unidade Atual</p>
                         <p class="font-semibold text-blue-900">CDP Pinheiros IV | Cela 04-A | Lotação: 95%</p>
-                        <p class="text-gray-500">Coabitação: Luiz Fernando K., Roberto T.</p>
+                        <p class="text-gray-500 italic">Coabitação: Luiz Fernando K., Roberto T.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Rodapé Operacional -->
             <footer class="mt-4 border-t pt-2 flex justify-between items-center text-[9px] text-gray-400 no-print">
-                <p>Armazenamento em Nuvem Ativo - Arquivo Otimizado</p>
+                <p>GitHub Host Ready | Cloud Storage Active</p>
                 <div class="flex gap-3">
                     <button onclick="window.print()" class="underline hover:text-black">IMPRIMIR</button>
-                    <button class="bg-red-800 text-white px-3 py-1 rounded">SOLICITAR TRANSFERÊNCIA</button>
+                    <button class="bg-red-800 text-white px-3 py-1 rounded">SOLICITAR MOVIMENTAÇÃO</button>
                 </div>
             </footer>
         </div>
@@ -175,7 +152,6 @@
 
     <script>
         document.getElementById('sessao').innerText = Math.random().toString(36).substring(7).toUpperCase();
-        
         const cpfInput = document.getElementById('cpfInput');
         cpfInput.addEventListener('input', (e) => {
             let v = e.target.value.replace(/\D/g, "");
@@ -184,7 +160,6 @@
             v = v.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
             e.target.value = v;
         });
-
         function buscarDados() {
             if(cpfInput.value.length < 14) { alert("CPF Inválido."); return; }
             document.getElementById('cpfDisplay').innerText = cpfInput.value;
