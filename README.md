@@ -24,16 +24,6 @@ Cloud Ready: Estrutura otimizada para armazenamento em nuvem e carregamento ráp
 
 Modo de Impressão: Layout adaptado para visualização técnica e oficial.
 
-🛠️ Tecnologias Utilizadas
-
-HTML5: Estrutura semântica dos dados.
-
-Tailwind CSS: Estilização moderna e responsiva.
-
-JavaScript (Vanilla): Lógica de máscara de CPF e filtragem de dados.
-
-Google Fonts: Tipografia Inter para leitura técnica.
-
 📂 Estrutura de Arquivos
 
 transferencia_prisional.html: Ficheiro principal contendo toda a interface e lógica.
